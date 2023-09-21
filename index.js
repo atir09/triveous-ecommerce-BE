@@ -5,9 +5,11 @@ const cors=require("cors")
 require("dotenv").config()
 
 
-// ............Importing Custom Modules..........
+// ............Importing Custom Modules And Routers..........
 
 const {connection}=require("./db")
+const {categoryRouter}=require("./routes/categories")
+const {productsRouter}=require("./routes/products")
 
 
 // ............Defining App............
@@ -24,6 +26,10 @@ app.use(express.json())
 app.get("/",(req,res)=>{
     res.send(`E-commerce API is up and running!`)
 })
+
+// Mounting The Routes
+app.use("/categories",categoryRouter)
+app.use("/products",productsRouter)
 
 
 
