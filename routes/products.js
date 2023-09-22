@@ -2,7 +2,7 @@
 const express=require("express")
 
 
-// ............Importing Custom Modules..........
+// ............Importing Controller Functions..........
 
 const { getProductList, getProductDetails } = require('../controllers/products');
 

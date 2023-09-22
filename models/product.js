@@ -16,7 +16,7 @@ const productSchema = new mongoose.Schema({
     },
     availability: {
         type:Boolean,
-        required:true
+        default: true,
     },
     categoryId: {
       type: mongoose.Schema.Types.ObjectId,

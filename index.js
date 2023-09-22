@@ -10,6 +10,7 @@ require("dotenv").config()
 const {connection}=require("./db")
 const {categoryRouter}=require("./routes/categories")
 const {productsRouter}=require("./routes/products")
+const {cartRouter}=require("./routes/cart")
 
 
 // ............Defining App............
@@ -30,7 +31,7 @@ app.get("/",(req,res)=>{
 // Mounting The Routes
 app.use("/categories",categoryRouter)
 app.use("/products",productsRouter)
-
+app.use("/cart",cartRouter)
 
 
 app.listen(process.env.PORT || 3000,async()=>{
