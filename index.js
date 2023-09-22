@@ -3,7 +3,7 @@
 const express = require("express")
 const cors = require("cors")
 require("dotenv").config()
-
+const rateLimit = require('express-rate-limit');
 
 // ............Importing Custom Modules And Routers..........
 
@@ -27,6 +27,16 @@ app.use(cors())
 
 // Middleware to parse JSON requests
 app.use(express.json())
+
+
+//  rate limiter
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // Limit each IP to 100 requests per windowMs
+  });
+
+
+  app.use(limiter);  
 
 // Defining a default route for API Testing
 app.get("/", (req, res) => {
