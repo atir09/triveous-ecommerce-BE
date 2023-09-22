@@ -17,3 +17,19 @@ categoryRouter.get("/",getCategoryList)
 module.exports={
     categoryRouter
 }
+
+
+// ....................Swagger Specs....................
+
+/**
+ * @swagger
+ * /categories:
+ *   get:
+ *     summary: Get a list of categories
+ *     description: Retrieve a list of categories with details => Name, Description.
+ *     responses:
+ *       200:
+ *         description: A list of categories.
+ *       500:
+ *         description: Internal server error.
+ */
