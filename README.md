@@ -2,6 +2,8 @@
 
 This is a backend API for an e-commerce platform built with Node.js. It supports various e-commerce operations, including product and category listing, product details, cart management, order processing, user authentication, and more.
 
+**Live Server:** [Link to Live Server](https://triveous-ecommerce-api-h0pq.onrender.com)
+
 ## Table of Contents
 
 - [Features](#features)
