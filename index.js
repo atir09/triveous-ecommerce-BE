@@ -11,6 +11,7 @@ const {connection}=require("./db")
 const {categoryRouter}=require("./routes/categories")
 const {productsRouter}=require("./routes/products")
 const {cartRouter}=require("./routes/cart")
+const {orderRouter}=require("./routes/order")
 
 
 // ............Defining App............
@@ -32,6 +33,7 @@ app.get("/",(req,res)=>{
 app.use("/categories",categoryRouter)
 app.use("/products",productsRouter)
 app.use("/cart",cartRouter)
+app.use("/orders",orderRouter)
 
 
 app.listen(process.env.PORT || 3000,async()=>{

@@ -2,7 +2,7 @@
 const express=require("express")
 
 
-// ............Importing Custom Modules..........
+// ............Importing Controller Function from Controllers Folder..........
 
 const { getCategoryList } = require('../controllers/categories');
 
