@@ -46,14 +46,15 @@ Before running the API, ensure you have the following dependencies installed:
    git clone https://github.com/atir09/triveous-ecommerce-BE.git
    cd triveous-ecommerce-BE
    ```
-2.Install dependencies:
+2. Install dependencies:
+
     ```bash
    npm install
    ```
 
-3.Configure environment variables (if required) in a .env file
+3. Configure environment variables (if required) in a .env file
 
-4.Start the API:
+4. Start the API:
 
     ```bash
     npm start
