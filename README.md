@@ -74,16 +74,16 @@ The API offers the following endpoints:
 - Category Listing: GET /categories
 - Product Listing: GET /products/category/{categoryId}
 - Product Details: GET /products/{productId}
-- Cart Management:
+-  ### Cart Management:
 - Add Product: POST /cart/add
 - View Cart: GET /cart/view
 - Update Cart Item: PUT /cart/update/{cartItemId}
 - Remove Cart Item: DELETE /cart/delete/{cartItemId}
-- Order Placement:
+-  ### Order Placement:
 - Place Order: POST /orders/place
 - Order History: GET /orders/history
 - Order Details: GET /orders/{orderId}
-- User Authentication:
+-  ### User Authentication:
 - Register: POST /user/register
 - Login: POST /user/login
 
