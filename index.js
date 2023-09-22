@@ -12,7 +12,7 @@ const {categoryRouter}=require("./routes/categories")
 const {productsRouter}=require("./routes/products")
 const {cartRouter}=require("./routes/cart")
 const {orderRouter}=require("./routes/order")
-
+const {authRouter}=require("./routes/auth")
 
 // ............Defining App............
 
@@ -30,6 +30,7 @@ app.get("/",(req,res)=>{
 })
 
 // Mounting The Routes
+app.use("/user",authRouter)
 app.use("/categories",categoryRouter)
 app.use("/products",productsRouter)
 app.use("/cart",cartRouter)
