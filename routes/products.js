@@ -15,7 +15,7 @@ const productsRouter=express.Router()
 productsRouter.get("/category/:categoryId",getProductList)
 
 // Route to get product details by product Id
-productsRouter.get("/:productID",getProductDetails)
+productsRouter.get("/:productId",getProductDetails)
 
 module.exports={
     productsRouter

@@ -2,7 +2,7 @@ const mongoose=require("mongoose")
 
 // Schema for Single Item in a List of Items in a Cart 
 const cartItemSchema=new mongoose.Schema({
-    productID:{
+    productId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Product',
         required:true

@@ -73,21 +73,28 @@ You can use this API to build your e-commerce application. To interact with the 
 
 The API offers the following endpoints:
 
+-  ### User Authentication:
+- Register: POST /user/register
+- Login: POST /user/login
+
+-  ### Get Categories :
 - Category Listing: GET /categories
+
+-  ### Retrieve Products:
 - Product Listing: GET /products/category/{categoryId}
 - Product Details: GET /products/{productId}
+
 -  ### Cart Management:
 - Add Product: POST /cart/add
 - View Cart: GET /cart/view
 - Update Cart Item: PUT /cart/update/{cartItemId}
 - Remove Cart Item: DELETE /cart/delete/{cartItemId}
+
 -  ### Order Placement:
 - Place Order: POST /orders/place
 - Order History: GET /orders/history
 - Order Details: GET /orders/{orderId}
--  ### User Authentication:
-- Register: POST /user/register
-- Login: POST /user/login
+
 
 Please refer to the API documentation for detailed information on request and response formats.
 

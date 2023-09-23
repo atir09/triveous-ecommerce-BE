@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 
 // Importing User Model form "models" folder
 const User = require('../models/user');
-
+const JWT_SECRET=process.env.JWT_SECRET
 
 // Aunthentication Function
 const requireAuth = (req, res, next) => {

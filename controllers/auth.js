@@ -1,5 +1,8 @@
 // ....Importing NPM Packages.....
 const jwt = require('jsonwebtoken');
+const bcrypt=require("bcrypt")
+require("dotenv").config()
+const JWT_SECRET=process.env.JWT_SECRET
 
 // Importing User Model From "models " folder
 const { User } = require('../models/user');
